@@ -31,6 +31,9 @@ function displayCircle() {
 
          circumference = calcCircumference(radiusfp)
          document.getElementById("circumference").innerHTML = circumference.toString();
+
+         area = calcArea(radiusfp)
+         document.getElementById("area").innerHTML = area.toString();
     }
 }
 
@@ -38,12 +41,17 @@ function displayCircle() {
   // returns diameter of a right triangle
   // square root of radius
   {
-      return 2*radiusvalue
+      return 2 * radiusvalue
   }
 
   function calcCircumference(radiusvalue)
   {
         return 2 * Math.PI * radiusvalue
+  }
+
+  function calcArea(radiusvalue)
+  {
+        return Math.PI * radiusvalue * radiusvalue
   }
   
   function clearForm()
