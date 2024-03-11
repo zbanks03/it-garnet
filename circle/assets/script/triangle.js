@@ -13,6 +13,8 @@ function displayCircle() {
          var radius; // string representation of the radius
          var radiusfp; // floating point value of radius
          var diameter;  // floating point diameter
+         var circumference;  // floating point circumference
+         var area;  // floating point area
          var result; // displayable result
 
          // read in the legs as a string
@@ -26,7 +28,7 @@ function displayCircle() {
          // calculate the hypotenuse
          diameter = calcDiameter(radiusfp);
 
-         // display the hypotenuse
+         // display the diameter
          document.getElementById("diameter").innerHTML = diameter.toString();
 
          circumference = calcCircumference(radiusfp)
@@ -59,4 +61,6 @@ function displayCircle() {
     document.getElementById("radius").value = "";
     document.getElementById("radiuserror").innerHTML = "";
     document.getElementById("diameter").innerHTML = "";
+    document.getElementById("circumference").innerHTML = "";
+    document.getElementById("area").innerHTML = "";
 }
