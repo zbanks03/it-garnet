@@ -16,7 +16,7 @@ function calculate() {
         if (document.getElementById("AddOperator").checked) {
             operator = document.getElementById("AddOperator").value;
         }
-        if (document.getElementById("SubstractOperator").checked) {
+        if (document.getElementById("SubtractOperator").checked) {
             operator = document.getElementById("SubtractOperator").value;
         }
         if (document.getElementById("MultiplyOperator").checked) {
@@ -30,9 +30,23 @@ function calculate() {
 
         var operand2fp = parseFloat (operand2);
 
-        function CalculateResult(operand1, operator, operand2) {
-            document.getElementById("Result").innerHTML = result.toString();
-}
+        if (operator == "+") {
+            result = operand1fp + operand2fp
+        }
+
+        if (operator == "-") {
+            result = operand1fp - operand2fp
+        }
+
+        if (operator == "*") {
+            result = operand1fp * operand2fp
+        }
+
+        if (operator == "/") {
+            result = operand1fp / operand2fp
+        }
+        document.getElementById("Result").innerHTML = result.toString();
+    }
 }
 
 function clearform() {
@@ -52,4 +66,4 @@ function clearform() {
 /* Form Validation */
 $( "#myform" ).validate({
 
-});}
+});
