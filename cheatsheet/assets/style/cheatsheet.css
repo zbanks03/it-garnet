@@ -73,6 +73,7 @@ h2.section-heading + h3.section-heading {
   flex: 1 70%;
   background-color:#2C3F2F;
   padding:10px;
+  border-radius:12px;
   margin-bottom:40px;
   overflow:auto;
 }
