@@ -1,5 +1,7 @@
 /* The following should be a file in the "style" folder */
+
 .formlabel {
+    color: blue;
     display: inline-block;
     width: 200px;
     text-align: right;
