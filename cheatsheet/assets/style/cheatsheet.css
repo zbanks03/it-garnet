@@ -14,12 +14,12 @@ body{
   .comfortaa-<uniquifier> {
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+  font-weight: normal;
+  
 }
 ;
-  background:#3D5841;
-  padding:20px;
+  background: #3D5841;
+  padding: 20px;
   color: white
 }
 
