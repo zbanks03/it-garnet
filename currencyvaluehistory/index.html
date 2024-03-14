@@ -6,18 +6,39 @@
     <meta name="description" content="Polygon - Company Details">
     <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery">
     <meta name="author" content="Bruce Bauer">
-    <title>Polygon - Company Details</title>
-    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <title>Currency Value History</title>
+    <link href="assets/style/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <form id="myform">
+    <form id="myform" onsubmit="return false">
         <div class="formcontainer">
-            <h2>Stock Ticker Details</h2>
-            <label for="StockSymbol" class="formlabel" >Enter Symbol: </label>
+            <h2>Currency Value History</h2>
+            <label for="from-curr-sym" class="formlabel" ><h4>Base Currency:</h4></label>
             <!--<label for="DisplayStock" class="formlabel" ></label>-->
-            <input type="text" id="StockSymbol" name="StockSymbol" size="6" maxlength="6"
-                    data-rule-required="true"  data-msg-required="Value is Required">
-            <label class="error" for="StockSymbol" id="StockSymbolError"></label><br>
+        <select id="from-curr-sym" name="from-curr-sym" 
+          data-rule-required="true" data-msg-required="Base Currency is Required">
+          <option value="">Select</option>
+          <option value="USD">US Dollar</option>
+          <option value="EUR">Euro Dollar</option>
+          <option value="GBP">Great Britain Pound</option>
+          <option value="MXN">Mexican Peso</option>
+          <option value="JPY">Japanese Yen</option>
+        </select>
+        <label id="from-curr-sym-error" for="from-curr-sym" class="error"></label>
+
+        <label for="to-curr-sym" class="formlabel" ><h4>Convert to Currency:</h4></label>
+        <select id="to-curr-sym" name="to-curr-sym" 
+          data-rule-required="true" data-msg-required="Convert to Currency is Required">
+            <option value="">Select</option>
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro Dollar</option>
+            <option value="GBP">Great Britain Pound</option>
+            <option value="MXN">Mexican Peso</option>
+            <option value="JPY">Japanese Yen</option>
+          </select>
+          <label id="to-curr-sym-error" for="to-curr-sym" class="error"></label><br>
+
+
             <label class="formlabel">From Date:</label>
             <input type="date" name="FromDate" id="FromDate" 
                 data-rule-required="true" data-msg-required="From Date is Required">
@@ -27,31 +48,9 @@
 			     data-rule-required="true" data-msg-required="To Date is Required">
 		    <label id="ToDateError" for="ToDate" class="error"></label>
             <br><br>
-            <input type="button" value="DisplayStock" id="DisplayStock" name="DisplayStock" onclick="GetStock();">
-            <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
-            <hr>
-            <br>
-            <label for="company" class="formlabel">Company: </label>
-            <span id="company"></span><br>
-            <label for="address" class="formlabel">Address: </label>
-            <span id="address"></span><br>
-            <label for="employees" class="formlabel">Employees: </label>
-            <span id="employees"></span><br>
-            <label for="description" class="formlabel">Description: </label>
-            <span id="description"></span><br>
-            <label for="url" class="formlabel">URL: </label>
-            <a id="url"></a><br>
-            <hr>
-
-            <div class="clearfix">
-                <div class="img-container">
-                    <span id="StockValueTable"></span>
-                </div>
-                <div class="img-container">
-                    <span id="StockVolumeTable"></span>
-                </div>
-            </div>
-            <hr>
+            <input type="submit" value="Show Results" id="Show Results" name="Show Results" onclick="GetStock();">
+            <input type="submit" formnovalidate value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
+    
             
             <div class="clearfix">
                 <div class="img-container">
@@ -67,6 +66,6 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="assets/script/script.js"></script>
 </body>
 </html>
