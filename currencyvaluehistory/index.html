@@ -13,7 +13,7 @@
     <form id="myform" onsubmit="return false">
         <div class="formcontainer">
             <h2>Currency Value History</h2>
-            <label for="from-curr-sym" class="formlabel" ><h4>Base Currency:</h4></label>
+            <label for="from-curr-sym" class="formlabel" >Base Currency:</label>
             <!--<label for="DisplayStock" class="formlabel" ></label>-->
         <select id="from-curr-sym" name="from-curr-sym" 
           data-rule-required="true" data-msg-required="Base Currency is Required">
@@ -26,7 +26,7 @@
         </select>
         <label id="from-curr-sym-error" for="from-curr-sym" class="error"></label>
 
-        <label for="to-curr-sym" class="formlabel" ><h4>Convert to Currency:</h4></label>
+        <label for="to-curr-sym" class="formlabel" >Convert to Currency:</label>
         <select id="to-curr-sym" name="to-curr-sym" 
           data-rule-required="true" data-msg-required="Convert to Currency is Required">
             <option value="">Select</option>
@@ -48,7 +48,7 @@
 			     data-rule-required="true" data-msg-required="To Date is Required">
 		    <label id="ToDateError" for="ToDate" class="error"></label>
             <br><br>
-            <input type="submit" value="Show Results" id="Show Results" name="Show Results" onclick="GetStock();">
+            <input type="submit" value="Show Results" id="ShowResults" name="ShowResults" onclick="GetStock();">
             <input type="submit" formnovalidate value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
     
             

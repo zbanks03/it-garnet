@@ -2,13 +2,13 @@ async function GetStock() {
     "use strict";
 
     // Get a reference to the form - Use the ID of the form
-    var form = $("#myform");
+     var form = $("#myform");
     
     // Validate all of the for elements
     form.validate();
     
     // If all of the form elements are valid, the get the form values
-    if (form.valid()) {
+    if ($( "#myform" ).valid()) {
         
         var FromCurrencySymbol = document.getElementById("from-curr-sym").value;
         var ToCurrencySymbol = document.getElementById("to-curr-sym").value;
@@ -69,7 +69,8 @@ async function GetStock() {
     }
 }
 
-function ClearForm() {
+function ClearForm() 
+{
     document.getElementById("from-curr-sym").value = "";
     document.getElementById("from-curr-sym-error").value = "";
     document.getElementById("to-curr-sym").value = "";
