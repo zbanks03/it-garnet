@@ -11,7 +11,7 @@
 </head>
 <body>
     <form id="myform" onsubmit="return false">
-        <div class="formcontainer">
+    <div class="formcontainer">
             <h2>Currency Value History</h2>
             <label for="from-curr-sym" class="formlabel" >Base Currency:</label>
             <!--<label for="DisplayStock" class="formlabel" ></label>-->
@@ -40,7 +40,7 @@
 
 
             <label class="formlabel">From Date:</label>
-            <input type="date" name="FromDate" id="FromDate" 
+            <input type="date" name="FromDate" id="FromDate"
                 data-rule-required="true" data-msg-required="From Date is Required">
             <label id="FromDateError" for="FromDate" class="error"></label>
             <label class="formlabel">To Date:</label>
@@ -49,7 +49,7 @@
 		    <label id="ToDateError" for="ToDate" class="error"></label>
             <br><br>
             <input type="submit" value="Show Results" id="ShowResults" name="ShowResults" onclick="GetStock();">
-            <input type="submit" formnovalidate value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
+            <input type="submit" value="Clear" id="Clear" name="Clear" onclick="ClearForm();" formnovalidate>
     
             
             <div class="clearfix">

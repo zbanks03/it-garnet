@@ -5,7 +5,7 @@ async function GetStock() {
      var form = $("#myform");
     
     // Validate all of the for elements
-    form.validate();
+    //form.validate();
     
     // If all of the form elements are valid, the get the form values
     if ($( "#myform" ).valid()) {
