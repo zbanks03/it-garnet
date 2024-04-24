@@ -10,81 +10,61 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Jura:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
 <form id="myform" onsubmit="return false">
     <div class="formcontainer">
         <h1>Mars Rover Photo Explorer</h1>
         <fieldset id="detail">
-            <legend>Mars Rover Photo Explorer</legend>  
+            <table border="1">
+                <tr>
+                  <th scope="col">Rover</th>
+                  <th scope="col">Mission Start</th>
+                  <th scope="col">Mission End</th>
+                </tr>
+                <tr>
+                  <td>Curiosity</td>
+                  <td>08/06/2012</td>
+                  <td>09/28/2019</td>
+                </tr>
+                <tr>
+                  <td>Opportunity</td>
+                  <td>01/26/2004</td>
+                  <td>06/11/2018</td>
+                </tr>
+                <tr>
+                  <td>Spirit</td>
+                  <td>01/05/2004</td>
+                  <td>03/21/2004</td>
+                </tr>
+              </table>
             <br>
-            
-            <label class="formlabel" for="FromValue">From Value: </label>
-            <input type="text" id="FromValue" name="FromValue" size="15" maxlength="15"       
-                   data-rule-required="true"  data-msg-required="FromValue is Required" 
-                   data-rule-number="true" data-msg-number="FromValue must be a Number">
-            <label class="error" for="FromValue" id="FromValueMsg"></label>
-            <br><br>
 
-            <label class="formlabel">From Unit: </label>
-                <label for="fromcentimeter">
-                    <input type="radio" name="FromUnit" id="fromcentimeter" value="cm"
-                           data-rule-required="true" data-msg-required="From Unit is Required" />centimeters
+            <label class="formlabel"> Rover: </label>
+            <input type="radio" name="Rover" id="Rover"
+                data-rule-required="true" data-msg-required="A Rover is Required">
+                <label for="curiosity">
+                    <input type="radio" name="Rover" id="curiosity" value="curiosity">Curiosity
                 </label>
-                <label for="frommeter">
-                    <input type="radio" name="FromUnit" id="frommeter" value="m">meters
+                <label for="opportunity">
+                    <input type="radio" name="Rover" id="opportunity" value="opportunity">Opportunity
                 </label>
-                <label for="fromkilometer">
-                    <input type="radio" name="FromUnit" id="fromkilometer" value="km">kilometers
+                <label for="spirit">
+                    <input type="radio" name="Rover" id="spirit" value="spirit">Spirit
                 </label>
-                <label for="frominch">
-                    <input type="radio" name="FromUnit" id="frominch" value="in">inches
-                </label>
-                <label for="fromfeet">
-                    <input type="radio" name="FromUnit" id="fromfeet" value="ft">feet
-                </label>
-                <label for="fromyard">
-                    <input type="radio" name="FromUnit" id="fromyard" value="yd">yards
-                </label>
-                <label for="frommile">
-                    <input type="radio" name="FromUnit" id="frommile" value="mi">miles
-                </label>
-                <label for="FromUnit" class="error" id="FromUnitMsg"></label>
+                <label for="Rover" class="error" id="RoverMsg"></label>
                 <br>
 
-
-                <label class="formlabel">To Unit: </label>
-                <label for="tocentimeter">
-                    <input type="radio" name="ToUnit" id="tocentimeter" value="cm"
-                           data-rule-required="true" data-msg-required="To Unit is Required" />centimeters
-                </label>
-                <label for="tometer">
-                    <input type="radio" name="ToUnit" id="tometer" value="m">meters
-                </label>
-                <label for="tokilometer">
-                    <input type="radio" name="ToUnit" id="tokilometer" value="km">kilometers
-                </label>
-                <label for="toinch">
-                    <input type="radio" name="ToUnit" id="toinch" value="in">inches
-                </label>
-                <label for="tofeet">
-                    <input type="radio" name="ToUnit" id="tofeet" value="ft">feet
-                </label>
-                <label for="toyard">
-                    <input type="radio" name="ToUnit" id="toyard" value="yd">yards
-                </label>
-                <label for="tomile">
-                    <input type="radio" name="ToUnit" id="tomile" value="mi">miles
-                </label>
-                <label for="ToUnit" class="error" id="ToUnitMsg"></label>
+                <label class="formlabel">Picture Date:</label>
+            <input type="date" name="PictureDate" id="PictureDate"
+                data-rule-required="true" data-msg-required="Date is Required">
+            <label id="PictureDateError" for="PictureDate" class="error"></label>
                 <br><br>
 
-            <label class="formlabel">To Value: </label>
-            <span id="ToValue"></span>
-            <br><br>
-
-
-            <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
+            <input type="button" value="Search" name="Search" onclick="search();">
             <input type="button" value="Clear" name="Clear" onclick="clearform();" formnovalidate>
 
         </fieldset>

@@ -5,7 +5,7 @@ body{
   font-style: normal;
 
 ;
-  background:#110019;
+  background:#3B002D;
   padding:20px;
   color: white
 }
@@ -20,7 +20,7 @@ header h1{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
+  font-size: 60px;
   font-variation-settings:
     "MORF" 30,
     "SHLN" 50;
@@ -39,15 +39,6 @@ section[id]{
 
 h2.section-heading{
    border-bottom:2px solid #ffffff;
-}
-
-.section-heading{
-  flex: 0 0 100%;
-}
-
-h2.section-heading {
-  border:none;
-  padding-top:0;
 }
 
 
