@@ -7,7 +7,6 @@ function search() {
         var PictureDate = document.getElementById("PictureDate").value;
 
         /* figure out which from unit was checked and place the value in operator */
-        var myURL1 = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + Rover + "/photos?earth_date=" + PictureDate + "&api_key=" + apiKey;
        
         var Rover;
         if (document.getElementById("curiosity").checked) {
@@ -20,9 +19,10 @@ function search() {
             Rover = document.getElementById("spirit").value;
         }
 
+        var myURL1 = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + Rover + "/photos?earth_date=" + PictureDate + "&page=1&api_key=" + apiKey;
         
 
-        CalculateResult(FromValue, fromunit, tounit)
+    
 
   
     }
