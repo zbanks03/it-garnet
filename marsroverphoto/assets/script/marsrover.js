@@ -1,4 +1,4 @@
-function calculate() {
+function search() {
     
     /* Make sure that the form is valid */
     if ($( "#myform" ).valid()) {
