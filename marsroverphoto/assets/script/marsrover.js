@@ -36,7 +36,8 @@ async function search() {
             // Note how we construct the name for image1, image2, etc...this sets the image source
             document.getElementById("image" + i).style.display = "inline";            
             document.getElementById("image" + i).src = msg1.photos[i].img_src;
-            document.getElementById("click" + i).src = msg1.photos[i].img_src;
+            document.getElementById("image" + i).title = msg1.photos[i].camera.full_name;
+            document.getElementById("click" + i).href = msg1.photos[i].img_src;
             //do something to set the tool tip = msg1.photos[i].camera.full_name;
         }
     }
