@@ -1,4 +1,16 @@
-async function search() {
+function DefaultDate() {
+    if (document.getElementById("curiosity").checked {
+        document.getElementById("PictureDate").value = "2012-08-6";
+    }
+    if (document.getElementById("opportunity").checked {
+        document.getElementById("PictureDate").value = "2004-01-26";
+    }
+    if (document.getElementById("spirit").checked {
+        document.getElementById("PictureDate").value = "2004-01-05";
+    }
+}
+
+    async function search() {
     
     /* Make sure that the form is valid */
     if ($( "#myform" ).valid()) {
@@ -36,7 +48,7 @@ async function search() {
             // Note how we construct the name for image1, image2, etc...this sets the image source
             document.getElementById("image" + i).style.display = "inline";            
             document.getElementById("image" + i).src = msg1.photos[i].img_src;
-            document.getElementById("image" + i).title = msg1.photos[i].camera.full_name;
+            document.getElementById("image" + i).title = msg1.photos[i].camera.full_name
             document.getElementById("click" + i).href = msg1.photos[i].img_src;
             //do something to set the tool tip = msg1.photos[i].camera.full_name;
         }
