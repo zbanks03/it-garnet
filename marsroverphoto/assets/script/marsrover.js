@@ -1,11 +1,11 @@
 function DefaultDate() {
-    if (document.getElementById("curiosity").checked {
+    if (document.getElementById("curiosity").checked) {
         document.getElementById("PictureDate").value = "2012-08-6";
     }
-    if (document.getElementById("opportunity").checked {
+    if (document.getElementById("opportunity").checked) {
         document.getElementById("PictureDate").value = "2004-01-26";
     }
-    if (document.getElementById("spirit").checked {
+    if (document.getElementById("spirit").checked) {
         document.getElementById("PictureDate").value = "2004-01-05";
     }
 }
