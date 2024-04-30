@@ -1,6 +1,6 @@
 function DefaultDate() {
     if (document.getElementById("curiosity").checked) {
-        document.getElementById("PictureDate").value = "2012-08-6";
+        document.getElementById("PictureDate").value = "2012-08-06";
     }
     if (document.getElementById("opportunity").checked) {
         document.getElementById("PictureDate").value = "2004-01-26";
