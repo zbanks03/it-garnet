@@ -1,0 +1,24 @@
+h1{
+      font-family: "Ubuntu Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+        text-align: center
+}
+body{
+    background-color:#852992b1;      
+}
+section[id]{
+  border:6px solid rgba(0,0,0,.4);
+  background:#e6a1efb1;
+  border-radius:10px;
+  margin:10px auto;
+  margin-right: 1000px;
+  margin-left: 100px;
+  padding:10px;
+  display:flex;
+  flex-wrap: wrap;
+  font-family: "Ubuntu Sans", sans-serif;
+}

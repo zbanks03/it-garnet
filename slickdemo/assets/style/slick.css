@@ -1,14 +1,15 @@
 body{
-    background-color:#3B002D;      
+    background-color:#120360e5;      
 }
 
 h1{
     text-align: center;
-    .jersey-15-regular {
+    color: white;
+
+
         font-family: "Jersey 15", sans-serif;
         font-weight: 400;
-        font-style: normal;
-      }     
+        font-style: normal;   
 }
 
 img{
