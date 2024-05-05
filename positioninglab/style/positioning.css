@@ -5,10 +5,13 @@ h1{
       font-style: normal;
       font-variation-settings:
         "wdth" 100;
-        text-align: center
+        text-align:center
+        
 }
 body{
-    background-color:#852992b1;      
+    background-color:#852992b1;  
+    text-align: center;
+    
 }
 section[id]{
   border:6px solid rgba(0,0,0,.4);
