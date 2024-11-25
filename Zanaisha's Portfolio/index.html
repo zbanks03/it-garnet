@@ -3,311 +3,346 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Zanaisha Banks Profile</title>
+    <title>Zanaisha Banks' Profile</title>
     <meta name="description" content="E-Commerce and Information Technology Lectures">
     <meta name="keywords" content="E-Commerce, HTML, CSS, PHP ,JavaScript">
-    <meta name="author" content="Zanaisha Banks">
+    <meta name="author" content="Bruce Bauer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- See https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
-<style>
-body {margin:0;font-family:Arial}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: "Raleway", Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+ 
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
+      #container {
+            margin: 50px auto;
+            max-width: 1200px;
+        }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+        h1, h2 {
+            text-align: center;
+        }
 
-.active {
-  background-color: #04AA6D;
-  color: white;
-}
+        p {
+            margin: 20px auto;
+            max-width: 800px;
+            line-height: 1.6;
+            text-align: center;
+        }
 
-.topnav .icon {
-  display: none;
-}
+        /* Top Navigation Bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+        .topnav a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
 
-.dropdown .dropbtn {
-  font-size: 17px;    
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
+        .active {
+            background-color: #25C34A ;
+            color: white;
+        }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+        .topnav .icon {
+            display: none;
+        }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
-}
+        .dropdown .dropbtn {
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          background-color: #333 ;
+        }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
+        .topnav a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #25C34A ;
+            color: white;
+        }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: white;
+        }
 
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child),
+            .dropdown .dropbtn {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
 
-body {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	/*background-color: #666;*/
-	}
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .topnav.responsive .dropdown {
+                float: none;
+            }
+            .topnav.responsive .dropdown-content {
+                position: relative;
+            }
+            .topnav.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
 
-#container {
-	margin-right: 50px;
-	margin-left: 50px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
+        /* Sliding Text Blocks */
+        .text-block {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-in-out;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            text-align: center;
+        }
 
-p {
-	margin-bottom: 20px;
-}
+        .text-block.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-p.shift {
-    margin-left: 30px;
-}
+        /* Accents */
+        h1, h2, h3 {
+            color: #AE006F; /* Light Powder Pink */
+        }
 
-.listmargin  {
-	margin-bottom: 20px;
-}	
+        .text-block p {
+            color: #25C34A; /* Pastel Forest Green */
+        }
+      
+      /* Third Text Block Grid (2x3 Layout) */
+        .text-block.third .grid-container {
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        }
+      
+      /* Back to Top Button */
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #AE006F;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+        }
 
-.img-style-1 {
-	float: left;
-	margin-right: 10px;
-    margin-bottom: 10px;
-	padding: 5px;
-	border: 1px solid #CCC;
-}	
-
-
-
-</style>
+        #backToTop:hover {
+            background-color: #25C34A;
+        }
+      
+    </style>
 </head>
 <body>
-<div id="container">
-    <h1>Portfolio of Zanaisha Banks</h1>
-    <div class="topnav" id="myTopnav">
-        <a class="tablinks" onclick="openTab(event, 'Home')" class="active" id="defaultOpen">Profile</a>
-        <a class="tablinks" onclick="openTab(event, 'Resume')">Resume</a>
-        <a class="tablinks" onclick="openTab(event, 'Skills')">Skills</a>
-        <a class="tablinks" onclick="openTab(event, 'Education')">Education</a>
-        <a class="tablinks" onclick="openTab(event, 'Accomplishments')">Accomplishments</a>
-        <a class="tablinks" onclick="openTab(event, 'CoverLetter')">Cover Letter</a>
-        <a class="tablinks" onclick="openTab(event, 'Contact')">Contact</a>
-         
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-
-
-    <!-- Begin Home Section -->
-    <div id="Home" class="tabcontent">
-      <h2>Profile</h2>
-      <p><img class="img-style-1" src="assets/imgs/me2small.JPG"><p>Hi, I'm Zanaisha Banks, a senior at the University of Arkansas at Little Rock, majoring in Business Information Systems. With a passion for technology and problem-solving, I am excited to combine my knowledge of business and information systems to create innovative solutions. Throughout my academic journey, I've worked on various projects that have honed my skills in software development, website creation, and data management.</p>
-    
-  </div>
-
-    <!-- Begin Skills Section -->
-    <div id="Skills" class="tabcontent">
-        <h2>Skills</h2> <ul>Programming Languages: C++, JavaScript, Python </ul>
-          <ul>Web Development: HTML, CSS, JavaScript, React</ul>
-          <ul>Database Management: SQL, MySQL</ul>
-          <ul>Tools: Git, JIRA, Visual Studio Code, Figma</ul></p>
-          <ul>Microsoft Word, Excel, Powerpoint</ul>
+ 
+    <div id="container">
+        <h1>Welcome to My Portfolio!</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="#profile" class="active">Profile</a>
+            <a href="#resume">Resume</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#accomplishments">Accomplishments</a>
+            <a href="#contact">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn">Work Examples 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#writing">Writing Examples</a>
+                    <a href="#web-projects">Web Projects</a>
+                    <a href="#databases">Databases</a>
+                    <a href="#programming">Programming</a>
+                   <a href="#soft-skills">Soft Skills</a>
+                  <a href="#capstone">Capstone</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
 
-    <!-- Begin Education Section -->
-    <div id="Education" class="tabcontent">
-        <h2>Education</h2>
-        <p>Bachelor of Science in Business Information Systems
-          University of Arkansas at Little Rock | Expected Graduation: Dec 2025</p>
-    </div>
-
-    <!-- Begin Accomplishments Section -->
-    <div id="Accomplishments" class="tabcontent">
-        <h2>Accomplishments</h2> 
-        <p>
-          <ul>Chancelor Leadership Corp 2021-2022</ul>
-          <li><a href="https://web-projects.net/digital-renaissance/" 
-            target="_blank">DeMedici Site</a></li>
-            <ul>Helped complete a capstone project creating a website for the Prince Lorenzo de' Medici Foundation</ul>
-        </p>
-    </div>        
-  
-    <!-- Begin Skills Section -->
-    <div id="Resume" class="tabcontent">
-        <h2>Resume</h2>
-        <p><h3>​​Experience​ </h3>
-          <ul>June 2020-2023</ul>  
-           
-           
-           
-         <ul> Data Entry Specialist-Leadfinders INC</ul> 
-           <p> Compiling and sorting data. 
-            Transcribing audio files into text. 
-            Fact-checking articles and manuscripts. 
-            Reviewing data for incomplete or inconsistent information. 
-            Entering raw data into a spreadsheet, document, or database. 
-            Merging files to update outdated or incomplete data. 
-            Handle inbound and outbound calls. </p>
-           
-           
-           
-           
-          ​<p>​November 2023-2024 
-           
-          <ul>Fulfillment Associate-UPS </ul></p>
-          <p>Makes sure all packages are properly packed and loaded.  
-          Follow written and verbal instructions from the warehouse manager.  
-          Prepares packages for delivery using scanners, handheld printers, and packing materials. </p>
-           
-           
-           
-           
-          <p>​<h3>Education</h3>
-          August 2021-present</p> 
-          
-           
-          <p>University of Arkansas at Little Rock </p>
-          <p>Business Administration and Minor in Information Technology </p>
-           
-           
-           
-          <p>June 2021</p>
-           
-           
-          Germantown high school 
-          High School Diploma 
-           
-          
-           
-          </p>
-    </div>
-    <!-- Begin Coverletter-->
-    <div id="CoverLetter" class="tabcontent">
-        <h2>Letter of Introduction</h2>
-        <p>Zanaisha Banks</p>
-         <p> Little Rock, AR 72204</p>
-          <p>zanaishab453@gmail.com</p>
-          <p>(901)302-5609</p>
-          <p>Dear whom is may concern,</p>
-          <p>I am writing to express my interest in the [Job Title] position at [Company Name]. As a senior student majoring in Business Information Systems at the University of Arkansas at Little Rock, I have gained extensive experience in software development, database management, and web design through my academic experience.With my technical skills and passion for problem-solving, I believe I would be an excellent fit for your team.
-          During my time at UALR, I have developed a strong ability to troubleshoot technical issues and provide effective solutions under pressure. Additionally, I have worked on several web development projects, including a website for the Prince Lorenzo de' Medici Foundation, which helped refine my skills in front-end development and user experience. I thrive in collaborative environments and have demonstrated my ability to work effectively both independently and in teams.
-          I am particularly drawn to the innovative work that [Company Name] is doing in [industry or field] and would be excited to contribute my technical and problem-solving skills to your team. I look forward to the opportunity to discuss how my background and skills can be of value to your organization.
-          <p>Thank you for considering my application. I am eager to bring my skills and enthusiasm to your team, and I would welcome the opportunity to meet with you to discuss the position further. I look forward to hearing from you.</p>
-          <p>Sincerely,
-          Zanaisha Banks</p>
-          </p>
-    </div>
-
-    <!--Begin Contact-->
-    <div id="Contact" class="tabcontent">
-      <h2>Contact Me</h2>
-      <p>Zanaisha Banks</p>
-      <p>Phone: (901)302-5609</p>
-      <p>Email: zanaishab453@gmail.com</p>
-      <p>LinkedIn: www.linkedin.com/in/zanaishabanks4</p>
-    </div>
-
-    
+        <!-- Content Blocks -->
+         <div id="profile" class="text-block">
+    <div>
+      <h2>Who Am I?</h2>
+        <p>Hello! I'm Zanaisha Banks, sjnxajsxx d sd jdsd Blah blah blah blah...</p>
+          </div>
+    <img src="https://via.placeholder.com/200x200" alt="Placeholder">
 </div>
 
-<script>
-/* Click the default tab so that the profile is displayed */
-document.getElementById("defaultOpen").click();
+      </div>
+  
+       <div class="text-block">
+    <div class="grid-container">
+        <div id="resume" class="grid-box">
+            <h3>Resume</h3>
+            <p>Hello! I'm Zanaisha Banks, a la la lah</p>
+        </div>
+        <div id="skills" class="grid-box">
+            <h3>Skills</h3>
+            <p>Creativity and technology come together to deliver impactful solutions in web development and IT infrastructure.</p>
+        </div>
+      
+        <div id="education" class="grid-box">
+            <h3>Education</h3>
+            <p>Bachelor's degree in Business Information Systems from UALR, focusing on innovative IT strategies.</p>
+        </div>
+      
+        <div id="accomplishments" class="grid-box">
+            <h3>Accomplishments</h3>
+            <p> highlighting dedication and excellence.</p>
+        </div>
+    </div>
+</div>
+  <div class="text-block third">
+  <div class="grid-container">
+        <div id="writing" class="grid-box">
+            <h3>Writing Examples</h3>
+            <p>Hello! I'm Zanaisha Banks, </p>
+        </div>
+    
+        <div id="web-projects" class="grid-box">
+            <h3>Web Projects</h3>
+            <p>Creativity and technology come together to deliver impactful solutions in web development and IT infrastructure.</p>
+        </div>
+    
+        <div id="databases" class="grid-box">
+            <h3>Databases</h3>
+            <p>Bachelor's degree in Business Information Systems from UALR, focusing on innovative IT strategies.</p>
+        </div>
+    
+        <div id="programming" class="grid-box">
+            <h3>Programming</h3>
+            <p>Recipient of multiple academic and IT-related awards, highlighting dedication and excellence.</p>
+        </div>
+    
+    <div id="soft-skills" class="grid-box"><h3>Soft Skills</h3><p>Details on soft skills.</p></div>
+    
+<div id="capstone" class="grid-box"><h3>Capstone</h3><p>Capstone details.</p></div>
+      
+    </div>
+</div>
+<div id="contact" class="text-block">
+    <div>
+      <h2>Let's Connect!</h2>
+        <p>Hello! I'm Zanaisha Banks, a passionate IT enthusiast specializing in e-commerce and information systems. Blah blah blah blah...</p>
+    </div>
+  
+<!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+    <script>
+        // Handle Mobile Navigation Toggle
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
 
-function openTab(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
+        // Sliding Animation for Text Blocks
+        const textBlocks = document.querySelectorAll('.text-block');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        textBlocks.forEach(block => {
+            observer.observe(block);
+        });
+      
+      // Back to Top Button functionality
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("backToTop").style.display = "block";
+                } else {
+                    document.getElementById("backToTop").style.display = "none";
+                }
+            }
+
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+    </script>
 </body>
 </html>
