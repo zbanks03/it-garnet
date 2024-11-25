@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: black;
+    color: white;
+  padding-top: 60px;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    color: lightpink;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: lightpink;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: pastelgreen;
+}
+
+.topnav {
+   
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.topnav a:hover {
+    background-color: lightpink;
+    color: black;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    animation: fadeEffect 1s;
+}
+
+.tabcontent h2 {
+    color: pastelgreen;
+}
+
+.tabcontent p {
+    color: white;
+}
+
+.output{
+  flex: 1 30%;
+  padding-right:400px;
+  margin-bottom:40px;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav .icon {display: block;}
+    .topnav.responsive {flex-direction: column;}
+    .topnav.responsive a {display: block;}
+}
+
+/* Flexbox for Four Smaller Text Boxes */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 800px;
+    gap: 20px;
+}
+
+.flex-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(50% - 20px); /* Two boxes per row */
+    min-width: 200px;
+    color: #25C34A;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.text-block {
+    display: flex; /* Enable flexbox for the text block */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out text and image */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    text-align: left; /* Align text to the left */
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+
+.text-block img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+/* Grid Layout for Tic Tac Toe Cross */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 10px;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.grid-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    color: #25C34A;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Styling for Text Inside Grid Boxes */
+.grid-box h3 {
+    color: #AE006F; 
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.grid-box p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: white;
+}
+
+/* Third Text Block Grid (2x3 Layout) */
+        .text-block.third .grid-container {
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        }
+
+        .grid-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            color: #25C34A;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .grid-box:hover {
+            transform: translateY(-10px);
+        }
